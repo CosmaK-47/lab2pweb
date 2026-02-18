@@ -1,103 +1,322 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOM Caffe • Landing</title>
 
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  <header class="header">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="home">
+  <div class="container header-inner">
+
+    <!-- LOGO CENTERED -->
+    <a class="brand" href="#home" aria-label="Home">
+      <img class="brand-logo" src="assets/logo.jpg" alt="HOM Caffe logo">
+      <span class="brand-text">HOM Caffe</span>
+    </a>
+
+
+    <!-- NAVIGATION -->
     <nav class="nav">
-      <a class="logo" href="#home">
-        <img src="assets/logo.png" alt="ISSA Chain">
-        <span>ISSA Chains</span>
-      </a>
-
-
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact" class="nav-cta">Book now</a>
-      </div>
+      <a class="nav-link" href="#menu">Menu</a>
+      <a class="nav-link" href="#schedule">Location & Schedule</a>
+      <a class="nav-link" href="#about">About</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-content">
-        <h1>If it doesn't make money, it don't make sense</h1>
-        <p>When you rich like this, you don't check the forecast, Every day it's gon rain</p>
+    <a class="floating-contact" href="#contact" aria-label="Contact HOM Caffe">
+    Contact
+    </a>
+
+
+<!-- HERO -->
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="hero-kicker">food truck</p>
+        <h1 class="hero-title">welcome</h1>
+
+        <div class="hero-line"></div>
+
+        <h2 class="hero-subtitle">
+          Fresh treats, bold flavors, and <span class="nowrap">fast service</span>.
+        </h2>
+
+        <p class="hero-text">
+          Pop in for handcrafted bites & sweet specials — perfect for events, office breaks, and late-night cravings.
+        </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#contact">Get a free quote</a>
-          <a class="btn secondary" href="#services">See services</a>
+          <a class="btn ghost" href="#contact">Customize</a>
         </div>
       </div>
-    </section>
 
-    <section id="services" class="section">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Custom Jewelry Design</h3>
-          <p>One-of-a-kind pieces crafted to match your vision, from concept to final polish.</p>
+      <div class="hero-right" aria-hidden="true">
+        <!-- Use your own image if you want; placeholder works too -->
+        <img class="hero-truck" src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=1400&q=80" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY SPECIALS -->
+  <section class="specials" id="specials">
+    <div class="container specials-grid">
+      <div class="special-card">
+        <img src="https://images.unsplash.com/photo-1505253213348-cea9c04f3f95?auto=format&fit=crop&w=600&q=80" alt="Vanilla ice cream">
+        <div class="price">$2.50</div>
+        <h3>vanilla ice cream</h3>
+      </div>
+      <div class="special-card">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Mango milkshake">
+        <div class="price">$1.99</div>
+        <h3>Mango Milkshake</h3>
+      </div>
+      <div class="special-card">
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2aa9b7b7?auto=format&fit=crop&w=600&q=80" alt="Chocolate ice cream">
+        <div class="price">$3.50</div>
+        <h3>chocolate ice cream</h3>
+      </div>
+      <div class="special-card">
+        <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80" alt="Chocolate milkshake">
+        <div class="price">$3.00</div>
+        <h3>chocolate milkshake</h3>
+      </div>
+
+      <div class="specials-right">
+        <h2 class="section-title big">daily<br>specials</h2>
+        <div class="section-line"></div>
+        <p class="section-text">
+          Limited drops every day. Choose your vibe — classic, creamy, or extra cold.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2 class="section-title center">Our Menu</h2>
+      <div class="section-line center-line"></div>
+      <p class="section-text center">
+        Pick your favorites. Perfect for quick orders, events, or custom combos.
+      </p>
+
+      <div class="menu-grid">
+        <div class="menu-col">
+          <div class="menu-col-head">
+            <h3>ice<br>cream</h3>
+            <div class="menu-col-line"></div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1549395156-e0c1fe6fc7a5?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Ice Cream 01</div>
+              <div class="menu-item-desc">Classic creamy scoop.</div>
+            </div>
+            <div class="menu-item-price">$ 2.45</div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1505253213348-cea9c04f3f95?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Ice Cream 02</div>
+              <div class="menu-item-desc">Fruity summer blend.</div>
+            </div>
+            <div class="menu-item-price">$ 2.75</div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Ice Cream 03</div>
+              <div class="menu-item-desc">Soft + smooth texture.</div>
+            </div>
+            <div class="menu-item-price">$ 1.95</div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Ice Cream 04</div>
+              <div class="menu-item-desc">Double flavor option.</div>
+            </div>
+            <div class="menu-item-price">$ 3.45</div>
+          </div>
         </div>
-        <div class="card">
-          <h3>Luxury Chains & Pendants</h3>
-          <p>Premium gold and silver chains, iced pendants, and statement pieces.</p>
-        </div>
-        <div class="card">
-          <h3>Private Consultations</h3>
-          <p>Book a personal session to choose, customize, or upgrade your jewelry.</p>
+
+        <div class="menu-col">
+          <div class="menu-col-head">
+            <h3>shakes</h3>
+            <div class="menu-col-line"></div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1579954115563-33f1f1581c44?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Shake 01</div>
+              <div class="menu-item-desc">Thick, cold, clean.</div>
+            </div>
+            <div class="menu-item-price">$ 3.00</div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1542444459-db37a9b5ae47?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Shake 02</div>
+              <div class="menu-item-desc">Chocolate drizzle top.</div>
+            </div>
+            <div class="menu-item-price">$ 3.45</div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1599785209707-28c1f6a6f2d6?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Shake 03</div>
+              <div class="menu-item-desc">Coffee kick version.</div>
+            </div>
+            <div class="menu-item-price">$ 2.00</div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=80" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Shake 04</div>
+              <div class="menu-item-desc">Caramel + cream.</div>
+            </div>
+            <div class="menu-item-price">$ 2.45</div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about" class="section alt">
-      <h2>Why choose us</h2>
-      <div class="grid">
-        <div class="card"><h3>Fast</h3><p>Explain benefit.</p></div>
-        <div class="card"><h3>Trusted</h3><p>Explain benefit.</p></div>
-        <div class="card"><h3>Quality</h3><p>Explain benefit.</p></div>
+  <!-- LOCATION & SCHEDULE -->
+  <section class="schedule" id="schedule">
+    <div class="container">
+      <h2 class="section-title big">location &amp;<br>schedule</h2>
+      <div class="section-line"></div>
+
+      <div class="map-wrap">
+        <iframe
+          title="Map"
+          src="https://www.google.com/maps?q=Strada%20Nationala%2022,%20Ungheni,%20Moldova&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-    </section>
 
-    <section id="reviews" class="section">
-      <h2>Reviews</h2>
-      <div class="grid">
-        <div class="card"><p>“Amazing service!”</p><strong>— Alex</strong></div>
-        <div class="card"><p>“Super fast and clean.”</p><strong>— Maria</strong></div>
-        <div class="card"><p>“Best in town.”</p><strong>— Andrei</strong></div>
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <div class="schedule-date">7–9 Martie</div>
+          <div class="schedule-place">Ungheni</div>
+          <div class="schedule-meta">
+            <span>Strada Naţionala 22, Ungheni</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-date">28–31 October</div>
+          <div class="schedule-place">The Bronx</div>
+          <div class="schedule-meta">
+            <span>20 Cooper Square, NY</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-date">01–05 November</div>
+          <div class="schedule-place">Manhattan</div>
+          <div class="schedule-meta">
+            <span>20 Cooper Square, NY</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-date">05–12 November</div>
+          <div class="schedule-place">Queens</div>
+          <div class="schedule-meta">
+            <span>20 Cooper Square, NY</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="section alt">
-      <h2>Contact</h2>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-photo" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1520975958225-6b0c1b5e3d1a?auto=format&fit=crop&w=1200&q=80" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="section-title big">About</h2>
+        <div class="section-line"></div>
+        <h3 class="about-headline">
+          Street food energy. Premium taste. Zero waiting.
+        </h3>
+        <p class="section-text">
+          We serve fast, fresh, and customizable treats for events, pop-ups, and daily cravings.
+          Book us and we’ll bring the vibe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title big">Contact</h2>
+        <div class="section-line"></div>
+        <p class="section-text">
+          Want a booking or a custom menu? Drop a message and we’ll reply ASAP.
+        </p>
+
+        <div class="contact-mini">
+          <div><strong>Phone</strong><span>+373 000 000 000</span></div>
+          <div><strong>Email</strong><span>issachains@info.com</span></div>
+        </div>
+      </div>
+
       <form class="form">
-        <label>
-          Name
-          <input type="text" placeholder="Your name" required>
-        </label>
-        <label>
-          Phone / Email
-          <input type="text" placeholder="+373..." required>
-        </label>
-        <label>
-          Message
-          <textarea placeholder="What do you need?" rows="4"></textarea>
-        </label>
-        <button class="btn primary" type="submit">Send</button>
+        <div class="form-row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+        <input type="email" placeholder="Email Address" required>
+        <textarea rows="7" placeholder="Your Message"></textarea>
+        <button class="btn accent" type="submit">Send Message</button>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 ISSA Chain. All rights reserved.</p>
+    <div class="container footer-inner">
+      <p class="footer-title">IT’S TRUCKING GOOD!</p>
+      <p class="footer-text">Made for Lab 2 — pure HTML + CSS. Deployed on Netlify.</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">x</a>
+        <a href="#" aria-label="YouTube">▶</a>
+      </div>
+      <p class="footer-copy">© 2026 ISSA Chains | Powered by ISSA Chains</p>
+    </div>
   </footer>
-  </body>
+  <script src="js/script.js"></script>
+</main>
 
+</body>
 </html>
