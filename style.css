@@ -712,7 +712,6 @@ body{
 /* RESPONSIVE */
 @media (max-width: 980px){
   .header-inner{ justify-content: space-between; }
-  .nav{ display:none; } /* simple mobile */
   .hero-grid{ grid-template-columns: 1fr; }
   .specials-grid{ grid-template-columns: repeat(2, 1fr); }
   .specials-right{ grid-column: 1 / -1; padding-left: 0; }
@@ -720,9 +719,17 @@ body{
   .schedule-grid{ grid-template-columns: repeat(2, 1fr); }
   .about-grid{ grid-template-columns: 1fr; }
   .contact-grid{ grid-template-columns: 1fr; }
+  .hero{ padding: 54px 0 28px; }
+  .hero-right{ justify-content:center; }
+  .hero-truck{ height: 240px; max-width: 560px; }
+  .hero-kicker{ display:none; } /* prea mare pe mobil */
+  .hero-title{ font-size: clamp(42px, 10vw, 70px); }
 }
 
 @media (max-width: 560px){
   .schedule-grid{ grid-template-columns: 1fr; }
   .form-row{ grid-template-columns: 1fr; }
+  .specials-grid{ grid-template-columns: 1fr; }
+  .special-card{ min-height: auto; }
+  .special-card img{ height: 160px; }
 }
