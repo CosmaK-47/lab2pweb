@@ -127,7 +127,7 @@ body{
 @media (max-width: 700px){
 
   .site-header{
-    position: relative;   /* nu sticky */
+    position: sticky;   /* nu sticky */
     background: rgba(111,78,55,.12); /* coffee glass */
     backdrop-filter: blur(10px);
   }
@@ -530,6 +530,98 @@ body{
   font-size: 22px;
 }
 
+/* ===== Bigger MENU images on desktop ===== */
+@media (min-width: 981px){
+  .menu-item{
+    grid-template-columns: 110px 1fr auto; /* mai mult loc pt imagine */
+    gap: 18px;
+    padding: 18px 0;
+  }
+
+  .menu-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* păstrează produsul întreg */
+    border-radius: 14px;
+  }
+
+  .menu-item-title{
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .menu-item-desc{
+    font-size: 14px;
+  }
+
+  .menu-item-price{
+    font-size: 24px;
+  }
+}
+
+  /* ===== Coffee column spacing ===== */
+  .coffee-col .menu-item{
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(27,22,19,.08);
+  }
+
+  .coffee-col .menu-item-title{
+    font-size: 20px;
+    letter-spacing: .4px;
+  }
+
+  .coffee-col .menu-item:last-child{
+    border-bottom: none;
+  }
+
+  .coffee-col{
+    padding-bottom: 40px;
+  }
+
+/* ===== Hover line for ALL menu items ===== */
+.menu .menu-item{
+  position: relative;
+}
+
+.menu .menu-item::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 0%;
+  height: 2px;
+  background: var(--bordo);
+  transition: 300ms ease;
+  opacity: .9;
+}
+
+.menu .menu-item:hover::after{
+  width: 40%;
+}
+
+/* dacă item-ul are imagine, mutăm linia după imagine */
+.menu .menu-item:has(img)::after{
+  left: 80px; /* 64px + gap */
+}
+
+/* mobile: linia un pic mai lungă */
+@media (max-width: 560px){
+  .menu .menu-item:hover::after{
+    width: 60%;
+  }
+}
+
+/* Desktop hover (mouse) */
+.menu .menu-item:hover::after{
+  width: 40%;
+}
+
+/* Mobile/keyboard: tap & focus */
+.menu .menu-item:active::after,
+.menu .menu-item:focus-within::after{
+  width: 60%;
+}
+
 /* SCHEDULE */
 .schedule{
   padding: 85px 0;
@@ -802,4 +894,25 @@ body{
     bottom: 78px; /* above the floating-contact */
   }
   .mascot-svg{ width: 68px; height: 68px; }
+}
+
+
+/* ===== Social hover colors ===== */
+
+/* Facebook */
+.social a[aria-label="Facebook"]:hover{
+  background: #1877f2;
+  color: #fff;
+}
+
+/* Instagram */
+.social a[aria-label="Instagram"]:hover{
+  background: linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+  color: #fff;
+}
+
+/* YouTube */
+.social a[aria-label="YouTube"]:hover{
+  background: #ff0000;
+  color: #fff;
 }
