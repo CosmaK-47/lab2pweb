@@ -306,7 +306,7 @@ body{
 .hero-line{
   width: 80px;
   height: 3px;
-  background: rgba(255,255,255,.8);
+  background: rgba(27,22,19,.25);
   margin: 28px 0;
 }
 
@@ -318,6 +318,8 @@ body{
 }
 
 .hero-text{
+  font-weight: 600;
+  letter-spacing: .2px;
   margin-top: 14px;
   color: var(--muted);
   max-width: 520px;
@@ -392,7 +394,7 @@ body{
 .section-line{
   width: 90px;
   height: 3px;
-  background: rgba(255,255,255,.85);
+  background: rgba(27,22,19,.25);
   margin: 22px 0;
 }
 
@@ -400,11 +402,13 @@ body{
   margin: 22px auto;
 }
 
-.section-text{
-  color: rgba(255,255,255,.78);
-  line-height: 1.7;
-  max-width: 720px;
+/* About text să fie ca în Hero */
+.about .section-text{
+  font-weight: 600;
+  letter-spacing: .2px;
+  color: var(--muted);
 }
+
 
 .section-text.center{
   text-align:center;
@@ -524,7 +528,7 @@ body{
 .menu-col-line{
   flex:1;
   height: 3px;
-  background: rgba(255,255,255,.75);
+  background: var(--line);
 }
 
 .menu-item{
@@ -558,6 +562,15 @@ body{
 .menu-item-price{
   font-weight: 900;
   font-size: 22px;
+}
+
+.elegant-text{
+  font-size: clamp(15px, 2.2vw, 19px);
+  line-height: clamp(1.6, 2.2vw, 1.9);
+  font-weight: 500;
+  letter-spacing: .3px;
+  color: rgba(27,22,19,.72);
+  max-width: 720px;
 }
 
 /* ===== Bigger MENU images on desktop ===== */
@@ -679,7 +692,7 @@ body{
 }
 
 .schedule-card{
-  border-top: 2px solid rgba(255,255,255,.75);
+  border-top: 2px solid rgba(27,22,19,.25);
   padding-top: 18px;
 }
 
@@ -695,10 +708,9 @@ body{
 }
 
 .schedule-meta{
-  display:flex;
-  flex-direction:column;
-  gap: 8px;
-  color: rgba(255,255,255,.8);
+  color: var(--bordo);
+  font-weight: 600;
+  letter-spacing: .2px;
 }
 
 /* ABOUT */
@@ -714,18 +726,83 @@ body{
   align-items:center;
 }
 
-.about-photo img{
+.about-photo{
+  position: relative;
+  overflow: visible; /* lasă semnătura să iasă în afară */
+}
+
+.about-headline{
+  font-size: clamp(26px, 3.2vw, 36px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+  margin: 14px 0 14px;
+  color: var(--text);
+}
+
+/* ✅ doar poza mare */
+.about-photo .about-main{
   width: 100%;
   height: 520px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 30px 80px rgba(0,0,0,.22);
+  display: block;
 }
 
-.about-headline{
-  font-size: 34px;
-  font-weight: 900;
-  margin: 12px 0 10px;
+/* ✅ semnătura */
+.about-photo .about-signature{
+  position: absolute;
+  right: -80px;
+  bottom: -60px;
+
+  width: clamp(90px, 14vw, 180px); /* puțin mai mare, dar controlat */
+  height: auto;
+
+  z-index: 5;
+  pointer-events: none;
+
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,.25));
+}
+
+@media (max-width: 768px){
+  .about-photo .about-signature{
+    right: -26px;
+    bottom: -22px;
+    width: clamp(80px, 26vw, 140px);
+  }
+}
+
+/* semnatura */
+.about-signature{
+  position: absolute;
+  right: -80px;
+  bottom: -60px;
+
+  width: clamp(70px, 10vw, 140px);
+  height: auto;
+
+  z-index: 5;
+  pointer-events: none;
+
+  /* IMPORTANT: anulam orice “mostenire” */
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,.25));
+}
+
+@media (max-width: 768px){
+  .about-signature{
+    right: -30px;
+    bottom: -24px;
+    width: clamp(80px, 22vw, 140px); /* mai mic si stabil pe mobil */
+  }
 }
 
 /* CONTACT */
@@ -754,7 +831,18 @@ body{
 }
 
 .contact-mini span{
-  color: rgba(255,255,255,.82);
+  font-weight: 600;
+  letter-spacing: .2px;
+  color: var(--bordo);
+}
+
+.contact-text{
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 500;
+  letter-spacing: .2px;
+  color: rgba(27,22,19,.72); /* culoare soft premium */
+  max-width: 680px;
 }
 
 .form{
@@ -769,16 +857,22 @@ body{
   gap: 12px;
 }
 
-.form input, .form textarea{
+.form input,
+.form textarea{
   width: 100%;
-  border: none;
+  border: 1px solid rgba(27,22,19,.12);
   outline: none;
-  padding: 14px 12px;
-  margin-top: 12px;
-  background: rgba(255,255,255,.92);
-  border-radius: 4px;
-  color: #111;
-  font-size: 14px;
+  padding: 16px 16px;
+  margin-top: 14px;
+  background: rgba(255,255,255,.65);
+  border-radius: 12px;
+
+  color: var(--coffee-dark);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .3px;
+
+  transition: all 220ms ease;
 }
 
 .form textarea{ resize: vertical; }
@@ -926,7 +1020,13 @@ body{
   .mascot-svg{ width: 68px; height: 68px; }
 }
 
-
+/* ===== send message button ===== */
+.btn.accent{
+  font-weight: 600;
+  letter-spacing: .8px;
+  font-size: 15px;
+  line-height: 1;
+}
 /* ===== Social hover colors ===== */
 
 /* Facebook */
