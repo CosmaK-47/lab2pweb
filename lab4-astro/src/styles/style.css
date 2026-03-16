@@ -291,7 +291,7 @@ body{
   font-size: clamp(56px, 9vw, 120px);
   font-weight: 800;
   letter-spacing: 1px;
-  text-transform: lowercase;
+  text-transform: none;
   opacity: .18;
   margin-bottom: 10px;
 }
@@ -299,7 +299,7 @@ body{
 .hero-title{
   font-size: clamp(56px, 8vw, 104px);
   font-weight: 900;
-  text-transform: lowercase;
+  text-transform: none;
   line-height: .9;
 }
 
@@ -454,7 +454,7 @@ body{
 .special-card h3{
   font-weight: 900;
   font-size: 22px;
-  text-transform: lowercase;
+  text-transform: none;
   line-height: 1.1;
 }
 
