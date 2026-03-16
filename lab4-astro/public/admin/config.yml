@@ -1,0 +1,88 @@
+backend:
+  name: github
+  repo: CosmaK-47/lab2pweb
+  branch: lab4-astro-cms
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - label: "Site Settings"
+        name: "site"
+        file: "src/content/site.json"
+        fields:
+          - label: "Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "Menu", name: "menu", widget: "string" }
+              - { label: "Schedule", name: "schedule", widget: "string" }
+              - { label: "About", name: "about", widget: "string" }
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Specials"
+            name: "specials"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Menu Intro"
+            name: "menuIntro"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Phone Label", name: "phoneLabel", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email Label", name: "emailLabel", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Button", name: "button", widget: "string" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Copyright", name: "copy", widget: "string" }
+
+          - label: "Social"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook", name: "facebook", widget: "string" }
+              - { label: "Instagram", name: "instagram", widget: "string" }
+              - { label: "YouTube", name: "youtube", widget: "string" }
+
+          - label: "Mascot"
+            name: "mascot"
+            widget: "object"
+            fields:
+              - { label: "Bubble Text", name: "bubble", widget: "string" }
