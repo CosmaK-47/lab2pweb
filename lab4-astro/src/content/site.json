@@ -9,7 +9,7 @@
     "button": "Send Message"
   },
   "nav": {
-    "menu": "Meniu ",
+    "menu": "Meniu",
     "schedule": "Locație & Evenimente",
     "about": "Despre"
   },
@@ -28,11 +28,148 @@
   "about": {
     "title": "Despre noi",
     "headline": "Energie de street food. Gust premium. Zero așteptare.",
-    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, pop-up-uri și pofte zilnice. Ne chemi și aducem vibe-ul."
+    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, pop-up-uri și pofte zilnice. Ne chemi și aducem vibe-ul.",
+    "image": "/assets/aboutphoto.jpg",
+    "imageAlt": "Băutură HOM Cafe în fața rulotei"
   },
   "specials": {
     "title": "daily specials",
-    "text": "Selecții zilnice în ediție limitată. Alege experiența ta — clasică, cremoasă sau intens răcoritoare."
+    "text": "Selecții zilnice în ediție limitată. Alege experiența ta — clasică, cremoasă sau intens răcoritoare.",
+    "items": [
+      {
+        "name": "Vafa cu Oreo",
+        "image": "/assets/vafa-oreo.png",
+        "alt": "Vafa cu Oreo"
+      },
+      {
+        "name": "Vafa cu fistic",
+        "image": "/assets/vafa-fistic.png",
+        "alt": "Vafa cu fistic"
+      },
+      {
+        "name": "Clatita cu banană",
+        "image": "/assets/clatita-banana.png",
+        "alt": "Clatită cu banană"
+      },
+      {
+        "name": "Clatita cu cafea",
+        "image": "/assets/clatita-cafenie.png",
+        "alt": "Clatită cu cafea"
+      }
+    ]
+  },
+  "menuSections": [
+    {
+      "title": "sărat",
+      "items": [
+        {
+          "name": "Clătită cu șuncă și cașcaval",
+          "image": "/assets/clatita-sunca-cascaval.png",
+          "alt": "Clătită cu șuncă și cașcaval"
+        },
+        {
+          "name": "Clătită cu Brânză",
+          "image": "/assets/clatita-branza.png",
+          "alt": "Clătită cu brânză"
+        },
+        {
+          "name": "Hot-Dog",
+          "image": "/assets/hot-dog.png",
+          "alt": "Hot dog"
+        },
+        {
+          "name": "Cartofi Pai",
+          "image": "/assets/cartofi-pai.png",
+          "alt": "Cartofi pai"
+        }
+      ]
+    },
+    {
+      "title": "dulce",
+      "items": [
+        {
+          "name": "Clătită cu banană și ciocolată belgiană cu lapte",
+          "image": "/assets/clatita-cafenie.png",
+          "alt": "Clătită dulce cu banană și ciocolată cu lapte"
+        },
+        {
+          "name": "Clătită cu vișină și ciocolată belgiană neagră",
+          "image": "/assets/clatita-visine.png",
+          "alt": "Clătită dulce cu vișină și ciocolată neagră"
+        },
+        {
+          "name": "Clătită cu banană și ciocolată belgiană albă",
+          "image": "/assets/clatita-banana.png",
+          "alt": "Clătită dulce cu banană și ciocolată albă"
+        },
+        {
+          "name": "Vafe",
+          "image": "/assets/vafe.png",
+          "alt": "Vafe"
+        }
+      ]
+    },
+    {
+      "title": "cafea",
+      "items": [
+        { "name": "Espresso" },
+        { "name": "Doppio" },
+        { "name": "Americano" },
+        { "name": "Cortado" },
+        { "name": "Cappuccino" },
+        { "name": "Macchiato" },
+        { "name": "Flat White" },
+        { "name": "Latte" },
+        { "name": "Hot Mocha" }
+      ]
+    },
+    {
+      "title": "băuturi calde",
+      "items": [
+        { "name": "Chai Latte" },
+        { "name": "Ciocolată caldă" },
+        { "name": "Ceai de cătină" },
+        { "name": "Ceai la plic" }
+      ]
+    },
+    {
+      "title": "băuturi reci",
+      "items": [
+        { "name": "Ice Latte" },
+        { "name": "Orange coffee" },
+        { "name": "Limonadă" },
+        { "name": "Ceai rece" }
+      ]
+    }
+  ],
+  "schedule": {
+    "title": "Schedule",
+    "events": [
+      {
+        "date": "7–9 Martie",
+        "city": "Ungheni",
+        "location": "Strada Naționala 22, Ungheni",
+        "hours": "09:00 – 18:00"
+      },
+      {
+        "date": "28–31 October",
+        "city": "The Bronx",
+        "location": "20 Cooper Square, NY",
+        "hours": "09:00 – 18:00"
+      },
+      {
+        "date": "01–05 November",
+        "city": "Manhattan",
+        "location": "20 Cooper Square, NY",
+        "hours": "09:00 – 18:00"
+      },
+      {
+        "date": "05–12 November",
+        "city": "Queens",
+        "location": "20 Cooper Square, NY",
+        "hours": "09:00 – 18:00"
+      }
+    ]
   },
   "hero": {
     "kicker": "HOM Cafe",

@@ -67,26 +67,12 @@ import site from "../content/site.json";
   <!-- DAILY SPECIALS -->
   <section class="specials" id="specials">
     <div class="container specials-grid">
-      <div class="special-card">
-        <img src="/assets/vafa-oreo.png" alt="Vanilla ice cream">
-<!--        <div class="price">$2.50</div>-->
-        <h3>vanilla ice cream</h3>
-      </div>
-      <div class="special-card">
-        <img src="/assets/vafa-fistic.png" alt="Mango milkshake">
-<!--        <div class="price">$1.99</div>-->
-        <h3>Mango Milkshake</h3>
-      </div>
-      <div class="special-card">
-        <img src="/assets/clatita-banana.png" alt="Chocolate ice cream">
-<!--        <div class="price">$3.50</div>-->
-        <h3>chocolate ice cream</h3>
-      </div>
-      <div class="special-card">
-        <img src="/assets/clatita-cafenie.png" alt="Chocolate milkshake">
-<!--        <div class="price">$3.00</div>-->
-        <h3>chocolate milkshake</h3>
-      </div>
+      {site.specials.items.map((item) => (
+          <div class="special-card">
+            <img src={item.image} alt={item.alt} />
+            <h3>{item.name}</h3>
+          </div>
+      ))}
 
       <div class="specials-right">
         <h2 class="section-title big">{site.specials.title}</h2>
@@ -104,278 +90,23 @@ import site from "../content/site.json";
       <p class="elegant-text center">{site.menuIntro.text}</p>
 
       <div class="menu-grid">
-        <div class="menu-col">
-          <div class="menu-col-head">
-            <h3>Sărat<br></h3>
-            <div class="menu-col-line"></div>
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/clatita-sunca-cascaval.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Clătită cu șuncă și cașcaval</div>
-<!--              <div class="menu-item-desc">Details</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 2.45</div>-->
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/clatita-branza.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Clătită cu Brânză</div>
-<!--              <div class="menu-item-desc">Details</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 3.45</div>-->
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/hot-dog.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Hot-Dog</div>
-<!--              <div class="menu-item-desc">Details</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 2.75</div>-->
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/cartofi-pai.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Cartofi Pai</div>
-<!--              <div class="menu-item-desc">Details</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 1.95</div>-->
-          </div>
-
-        </div>
-
-        <div class="menu-col">
-          <div class="menu-col-head">
-            <h3>Dulce</h3>
-            <div class="menu-col-line"></div>
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/clatita-cafenie.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Clătită cu banană și
-                ciocolată belgiană cu lapte</div>
-<!--              <div class="menu-item-desc">Details</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 3.00</div>-->
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/clatita-visine.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Clătită cu vișină și
-                ciocolată belgiană neagră</div>
-<!--              <div class="menu-item-desc">Chocolate drizzle top.</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 3.45</div>-->
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/clatita-banana.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Clătită cu banană și
-                ciocolată belgiană albă</div>
-<!--              <div class="menu-item-desc">Coffee kick version.</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 2.00</div>-->
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/vafe.png" alt="">
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Shake 04</div>
-<!--              <div class="menu-item-desc">Caramel + cream.</div>-->
-            </div>
-<!--            <div class="menu-item-price">$ 2.45</div>-->
-          </div>
-        </div>
-
-        <div class="menu-col coffee-col">
-          <div class="menu-col-head">
-            <h3>Cafea</h3>
-            <div class="menu-col-line"></div>
-          </div>
-
-          <div class="menu-item">
-          <!--  <img src="/assets/clatita-cafenie.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Espresso</div>
-          <!--    <div class="menu-item-desc">Details</div> -->
-            </div>
-<!--            <div class="menu-item-price">$ 3.00</div>-->
-          </div>
-
-          <div class="menu-item">
-          <!--  <img src="/assets/clatita-visine.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Doppio</div>
-        <!--      <div class="menu-item-desc">Chocolate drizzle top.</div> -->
-            </div>
-<!--            <div class="menu-item-price">$ 3.45</div>-->
-          </div>
-
-          <div class="menu-item">
-          <!--  <img src="/assets/clatita-banana.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Americano</div>
-          <!--    <div class="menu-item-desc">Coffee kick version.</div> -->
-            </div>
-<!--            <div class="menu-item-price">$ 2.00</div>-->
-          </div>
-
-          <div class="menu-item">
-          <!--  <img src="/assets/vafe.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Cortado</div>
-          <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-            </div>
-<!--            <div class="menu-item-price">$ 2.45</div>-->
-          </div>
-
-          <div class="menu-item">
-            <!--  <img src="/assets/vafe.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Cappuccino</div>
-              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-            </div>
-<!--            <div class="menu-item-price">$ 2.45</div>-->
-          </div>
-
-          <div class="menu-item">
-            <!--  <img src="/assets/vafe.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Macchiato</div>
-              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-            </div>
-<!--            <div class="menu-item-price">$ 2.45</div>-->
-          </div>
-
-          <div class="menu-item">
-            <!--  <img src="/assets/vafe.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Flat White</div>
-              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-            </div>
-        <!--    <div class="menu-item-price">$ 2.45</div> -->
-          </div>
-
-          <div class="menu-item">
-            <!--  <img src="/assets/vafe.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Latte</div>
-              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-            </div>
-        <!--    <div class="menu-item-price">$ 2.45</div> -->
-          </div>
-
-          <div class="menu-item">
-            <!--  <img src="/assets/vafe.png" alt=""> -->
-            <div class="menu-item-meta">
-              <div class="menu-item-title">Hot Mocha</div>
-              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-            </div>
-        <!--    <div class="menu-item-price">$ 2.45</div> -->
-          </div>
-        </div>
-
-        <div>
-
-          <!-- ===== BĂUTURI CALDE ===== -->
-          <div class="menu-col">
-            <div class="menu-col-head">
-              <h3>băuturi calde</h3>
-              <div class="menu-col-line"></div>
-            </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/clatita-cafenie.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Chai Latte</div>
-                <!--    <div class="menu-item-desc">Details</div> -->
+        {site.menuSections.map((section) => (
+            <div class={`menu-col ${section.title.toLowerCase() === "cafea" ? "coffee-col" : ""}`}>
+              <div class="menu-col-head">
+                <h3>{section.title}</h3>
+                <div class="menu-col-line"></div>
               </div>
-              <!--    <div class="menu-item-price">$ 3.00</div> -->
+
+              {section.items.map((item) => (
+                  <div class="menu-item">
+                    {item.image && <img src={item.image} alt={item.alt || item.name} />}
+                    <div class="menu-item-meta">
+                      <div class="menu-item-title">{item.name}</div>
+                    </div>
+                  </div>
+              ))}
             </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/clatita-visine.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Ciocolată caldă</div>
-                <!--      <div class="menu-item-desc">Chocolate drizzle top.</div> -->
-              </div>
-              <!--    <div class="menu-item-price">$ 3.45</div> -->
-            </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/clatita-banana.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Ceai de cătină</div>
-                <!--    <div class="menu-item-desc">Coffee kick version.</div> -->
-              </div>
-              <!--    <div class="menu-item-price">$ 2.00</div> -->
-            </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/vafe.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Ceai la plic</div>
-                <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-              </div>
-              <!--    <div class="menu-item-price">$ 2.45</div> -->
-            </div>
-
-          </div> <!-- END băuturi calde -->
-
-
-          <!-- ===== BĂUTURI RECI ===== -->
-          <div class="menu-col">
-            <div class="menu-col-head">
-              <h3>băuturi reci</h3>
-              <div class="menu-col-line"></div>
-            </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/clatita-cafenie.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Ice Latte</div>
-                <!--    <div class="menu-item-desc">Details</div> -->
-              </div>
-              <!--    <div class="menu-item-price">$ 3.00</div> -->
-            </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/clatita-visine.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Orange coffee</div>
-                <!--      <div class="menu-item-desc">Chocolate drizzle top.</div> -->
-              </div>
-              <!--    <div class="menu-item-price">$ 3.45</div> -->
-            </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/clatita-banana.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Limonadă</div>
-                <!--    <div class="menu-item-desc">Coffee kick version.</div> -->
-              </div>
-              <!--      <div class="menu-item-price">$ 2.00</div> -->
-            </div>
-
-            <div class="menu-item">
-              <!--  <img src="/assets/vafe.png" alt=""> -->
-              <div class="menu-item-meta">
-                <div class="menu-item-title">Ceai rece</div>
-                <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
-              </div>
-              <!--    <div class="menu-item-price">$ 2.45</div> -->
-            </div>
-
-          </div> <!-- END băuturi reci -->
-
-        </div>
+        ))}
       </div>
     </div>
   </section>
@@ -396,41 +127,16 @@ import site from "../content/site.json";
       </div>
 
       <div class="schedule-grid">
-        <div class="schedule-card">
-          <div class="schedule-date">7–9 Martie</div>
-          <div class="schedule-place">Ungheni</div>
-          <div class="schedule-meta">
-            <span>Strada Naţionala 22, Ungheni</span>
-            <span>09:00 – 18:00</span>
-          </div>
-        </div>
-
-        <div class="schedule-card">
-          <div class="schedule-date">28–31 October</div>
-          <div class="schedule-place">The Bronx</div>
-          <div class="schedule-meta">
-            <span>20 Cooper Square, NY</span>
-            <span>09:00 – 18:00</span>
-          </div>
-        </div>
-
-        <div class="schedule-card">
-          <div class="schedule-date">01–05 November</div>
-          <div class="schedule-place">Manhattan</div>
-          <div class="schedule-meta">
-            <span>20 Cooper Square, NY</span>
-            <span>09:00 – 18:00</span>
-          </div>
-        </div>
-
-        <div class="schedule-card">
-          <div class="schedule-date">05–12 November</div>
-          <div class="schedule-place">Queens</div>
-          <div class="schedule-meta">
-            <span>20 Cooper Square, NY</span>
-            <span>09:00 – 18:00</span>
-          </div>
-        </div>
+        {site.schedule.events.map((event) => (
+            <div class="schedule-card">
+              <div class="schedule-date">{event.date}</div>
+              <div class="schedule-place">{event.city}</div>
+              <div class="schedule-meta">
+                <span>{event.location}</span>
+                <span>{event.hours}</span>
+              </div>
+            </div>
+        ))}
       </div>
     </div>
   </section>
@@ -439,8 +145,8 @@ import site from "../content/site.json";
   <section class="about" id="about">
     <div class="container about-grid">
       <div class="about-photo" aria-hidden="true">
-        <img class="about-main" src="/assets/aboutphoto.jpg" alt="">
-        <img src="/assets/hom.png" class="about-signature" alt="">
+        <img class="about-main" src={site.about.image} alt={site.about.imageAlt} />
+        <img src="/assets/hom.png" class="about-signature" alt="HOM signature" />
       </div>
 
       <div class="about-content">

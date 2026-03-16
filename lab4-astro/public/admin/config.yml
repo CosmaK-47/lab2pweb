@@ -37,6 +37,13 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
 
           - label: "Menu Intro"
             name: "menuIntro"
@@ -45,6 +52,33 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
 
+          - label: "Menu Sections"
+            name: "menuSections"
+            widget: "list"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Alt Text", name: "alt", widget: "string", required: false }
+
+          - label: "Schedule Data"
+            name: "schedule"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - label: "Events"
+                name: "events"
+                widget: "list"
+                fields:
+                  - { label: "Date", name: "date", widget: "string" }
+                  - { label: "City", name: "city", widget: "string" }
+                  - { label: "Location", name: "location", widget: "string" }
+                  - { label: "Hours", name: "hours", widget: "string" }
+
           - label: "About"
             name: "about"
             widget: "object"
@@ -52,6 +86,8 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt", name: "imageAlt", widget: "string" }
 
           - label: "Contact"
             name: "contact"
