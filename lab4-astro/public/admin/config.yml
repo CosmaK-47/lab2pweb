@@ -4,6 +4,7 @@ backend:
 
 media_folder: "public/assets"
 public_folder: "/assets"
+publish_mode: simple
 
 collections:
   - name: "site"
