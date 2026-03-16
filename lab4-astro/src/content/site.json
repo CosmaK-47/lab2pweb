@@ -20,44 +20,6 @@
     "title": "Our Menu",
     "text": "Descoperă preferatele tale — ideale pentru comenzi rapide, evenimente sau combinații create după gustul tău."
   },
-  "social": {
-    "facebook": "https://www.facebook.com/homcafe",
-    "instagram": "https://www.instagram.com/hom.caffe/",
-    "youtube": "https://www.youtube.com/@homcafe"
-  },
-  "about": {
-    "title": "Despre noi",
-    "headline": "Energie de street food. Gust premium. Zero așteptare.",
-    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, pop-up-uri și pofte zilnice. Ne chemi și aducem vibe-ul.",
-    "image": "/assets/aboutphoto.jpg",
-    "imageAlt": "Băutură HOM Cafe în fața rulotei"
-  },
-  "specials": {
-    "title": "daily specials",
-    "text": "Selecții zilnice în ediție limitată. Alege experiența ta — clasică, cremoasă sau intens răcoritoare.",
-    "items": [
-      {
-        "name": "Vafa cu Oreo",
-        "image": "/assets/vafa-oreo.png",
-        "alt": "Vafa cu Oreo"
-      },
-      {
-        "name": "Vafa cu fistic",
-        "image": "/assets/vafa-fistic.png",
-        "alt": "Vafa cu fistic"
-      },
-      {
-        "name": "Clatita cu banană",
-        "image": "/assets/clatita-banana.png",
-        "alt": "Clatită cu banană"
-      },
-      {
-        "name": "Clatita cu cafea",
-        "image": "/assets/clatita-cafenie.png",
-        "alt": "Clatită cu cafea"
-      }
-    ]
-  },
   "menuSections": [
     {
       "title": "sărat",
@@ -112,38 +74,84 @@
     {
       "title": "cafea",
       "items": [
-        { "name": "Espresso" },
-        { "name": "Doppio" },
-        { "name": "Americano" },
-        { "name": "Cortado" },
-        { "name": "Cappuccino" },
-        { "name": "Macchiato" },
-        { "name": "Flat White" },
-        { "name": "Latte" },
-        { "name": "Hot Mocha" }
+        {
+          "name": "Espresso"
+        },
+        {
+          "name": "Doppio"
+        },
+        {
+          "name": "Americano"
+        },
+        {
+          "name": "Cortado"
+        },
+        {
+          "name": "Cappuccino"
+        },
+        {
+          "name": "Macchiato"
+        },
+        {
+          "name": "Flat White"
+        },
+        {
+          "name": "Latte"
+        },
+        {
+          "name": "Hot Mocha"
+        }
       ]
     },
     {
       "title": "băuturi calde",
       "items": [
-        { "name": "Chai Latte" },
-        { "name": "Ciocolată caldă" },
-        { "name": "Ceai de cătină" },
-        { "name": "Ceai la plic" }
+        {
+          "name": "Chai Latte"
+        },
+        {
+          "name": "Ciocolată caldă"
+        },
+        {
+          "name": "Ceai de cătină"
+        },
+        {
+          "name": "Ceai la plic"
+        }
       ]
     },
     {
       "title": "băuturi reci",
       "items": [
-        { "name": "Ice Latte" },
-        { "name": "Orange coffee" },
-        { "name": "Limonadă" },
-        { "name": "Ceai rece" }
+        {
+          "name": "Ice Latte"
+        },
+        {
+          "name": "Orange coffee"
+        },
+        {
+          "name": "Limonadă"
+        },
+        {
+          "name": "Ceai rece"
+        }
       ]
     }
   ],
+  "social": {
+    "facebook": "https://www.facebook.com/homcafe",
+    "instagram": "https://www.instagram.com/hom.caffe/",
+    "youtube": "https://www.youtube.com/@homcafe"
+  },
+  "about": {
+    "title": "Despre noi",
+    "headline": "Energie de street food. Gust premium. Zero așteptare.",
+    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, pop-up-uri și pofte zilnice. Ne chemi și aducem vibe-ul.",
+    "image": "/assets/aboutphoto.jpg",
+    "imageAlt": "Băutură HOM Cafe în fața rulotei"
+  },
   "schedule": {
-    "title": "Schedule",
+    "title": "Evenimente",
     "events": [
       {
         "date": "7–9 Martie",
@@ -168,6 +176,32 @@
         "city": "Queens",
         "location": "20 Cooper Square, NY",
         "hours": "09:00 – 18:00"
+      }
+    ]
+  },
+  "specials": {
+    "title": "daily specials",
+    "text": "Selecții zilnice în ediție limitată. Alege experiența ta — clasică, cremoasă sau intens răcoritoare.",
+    "items": [
+      {
+        "name": "Vafa cu Oreo",
+        "image": "/assets/vafa-oreo.png",
+        "alt": "Vafa cu Oreo"
+      },
+      {
+        "name": "Vafa cu fistic",
+        "image": "/assets/vafa-fistic.png",
+        "alt": "Vafa cu fistic"
+      },
+      {
+        "name": "Clatita cu banană",
+        "image": "/assets/clatita-banana.png",
+        "alt": "Clatită cu banană"
+      },
+      {
+        "name": "Clatita cu cafea",
+        "image": "/assets/clatita-cafenie.png",
+        "alt": "Clatită cu cafea"
       }
     ]
   },
