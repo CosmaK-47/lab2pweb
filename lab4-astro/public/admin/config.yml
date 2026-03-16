@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "public/assets"
+media_folder: "lab4-astro/public/assets"
 public_folder: "/assets"
 publish_mode: simple
 
@@ -12,7 +12,7 @@ collections:
     files:
       - label: "Site Settings"
         name: "site"
-        file: "src/content/site.json"
+        file: "lab4-astro/src/content/site.json"
         fields:
           - label: "Navigation"
             name: "nav"
