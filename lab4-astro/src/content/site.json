@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "menu": "Meniu",
+    "schedule": "Locație & Evenimente",
+    "about": "Despre"
+  },
+  "hero": {
+    "kicker": "HOM Caffe",
+    "title": "welcome",
+    "subtitle": "Gustări proaspete. Arome intense. Servire rapidă.",
+    "text": "Te așteptăm cu gustări artizanale și specialități dulci — perfecte pentru evenimente, pauze la birou sau momentele când pofta apare târziu."
+  },
+  "specials": {
+    "title": "daily specials",
+    "text": "Selecții zilnice în ediție limitată. Alege experiența ta — clasică, cremoasă sau intens răcoritoare."
+  },
+  "menuIntro": {
+    "title": "Our Menu",
+    "text": "Descoperă preferatele tale — ideale pentru comenzi rapide, evenimente sau combinații create după gustul tău."
+  },
+  "about": {
+    "title": "Despre noi",
+    "headline": "Energie de street food. Gust premium. Zero așteptare.",
+    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, pop-up-uri și pofte zilnice. Ne chemi și aducem vibe-ul."
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Doriți o rezervare sau un meniu personalizat? Trimiteți-ne un mesaj și revenim în cel mai scurt timp.",
+    "phoneLabel": "Telefon",
+    "phone": "+373 769 011 65",
+    "emailLabel": "Email",
+    "email": "homcafemd@gmail.com",
+    "button": "Send Message"
+  },
+  "footer": {
+    "title": "IT’S TRUCKING GOOD!",
+    "text": "HOM Caffe",
+    "copy": "© 2026 HOM Cafe | Powered by HOM Cafe"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/homcafe",
+    "instagram": "https://www.instagram.com/hom.caffe/",
+    "youtube": "https://www.youtube.com/@homcafe"
+  },
+  "mascot": {
+    "bubble": "Welcome ☕ Vă așteptăm cu drag 🤎"
+  }
+}

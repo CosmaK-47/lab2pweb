@@ -1,0 +1,531 @@
+---
+import "../styles/style.css";
+import "../styles/reset.css";
+import site from "../content/site.json";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOM Cafe • Landing</title>
+
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="home">
+  <div class="container header-inner">
+
+    <!-- LOGO CENTERED -->
+    <a class="brand" href="#home" aria-label="Home">
+      <img class="brand-logo" src="/assets/logo.jpg" alt="HOM Cafe logo">
+    </a>
+
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <a class="nav-link" href="#menu">{site.nav.menu}</a>
+      <a class="nav-link" href="#schedule">{site.nav.schedule}</a>
+      <a class="nav-link" href="#about">{site.nav.about}</a>
+    </nav>
+  </div>
+</header>
+
+    <a class="floating-contact" href="#contact" aria-label="Contact HOM Cafe">
+    Contact
+    </a>
+
+
+<!-- HERO -->
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="hero-kicker">{site.hero.kicker}</p>
+        <h1 class="hero-title">{site.hero.title}</h1>
+
+        <div class="hero-line"></div>
+
+        <h2 class="hero-subtitle">{site.hero.subtitle}</h2>
+
+        <p class="hero-text">{site.hero.text}</p>
+
+        <div class="hero-actions">
+<!--          <a class="btn ghost" href="#contact">Customize</a>-->
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <!-- Use your own image if you want; placeholder works too -->
+        <img class="hero-truck" src="/assets/truckphoto2.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY SPECIALS -->
+  <section class="specials" id="specials">
+    <div class="container specials-grid">
+      <div class="special-card">
+        <img src="/assets/vafa-oreo.png" alt="Vanilla ice cream">
+<!--        <div class="price">$2.50</div>-->
+        <h3>vanilla ice cream</h3>
+      </div>
+      <div class="special-card">
+        <img src="/assets/vafa-fistic.png" alt="Mango milkshake">
+<!--        <div class="price">$1.99</div>-->
+        <h3>Mango Milkshake</h3>
+      </div>
+      <div class="special-card">
+        <img src="/assets/clatita-banana.png" alt="Chocolate ice cream">
+<!--        <div class="price">$3.50</div>-->
+        <h3>chocolate ice cream</h3>
+      </div>
+      <div class="special-card">
+        <img src="/assets/clatita-cafenie.png" alt="Chocolate milkshake">
+<!--        <div class="price">$3.00</div>-->
+        <h3>chocolate milkshake</h3>
+      </div>
+
+      <div class="specials-right">
+        <h2 class="section-title big">{site.specials.title}</h2>
+        <div class="section-line"></div>
+        <p class="section-text">{site.specials.text}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2 class="section-title center">{site.menuIntro.title}</h2>
+      <div class="section-line center-line"></div>
+      <p class="elegant-text center">{site.menuIntro.text}</p>
+
+      <div class="menu-grid">
+        <div class="menu-col">
+          <div class="menu-col-head">
+            <h3>Sărat<br></h3>
+            <div class="menu-col-line"></div>
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/clatita-sunca-cascaval.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Clătită cu șuncă și cașcaval</div>
+<!--              <div class="menu-item-desc">Details</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 2.45</div>-->
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/clatita-branza.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Clătită cu Brânză</div>
+<!--              <div class="menu-item-desc">Details</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 3.45</div>-->
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/hot-dog.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Hot-Dog</div>
+<!--              <div class="menu-item-desc">Details</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 2.75</div>-->
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/cartofi-pai.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Cartofi Pai</div>
+<!--              <div class="menu-item-desc">Details</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 1.95</div>-->
+          </div>
+
+        </div>
+
+        <div class="menu-col">
+          <div class="menu-col-head">
+            <h3>Dulce</h3>
+            <div class="menu-col-line"></div>
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/clatita-cafenie.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Clătită cu banană și
+                ciocolată belgiană cu lapte</div>
+<!--              <div class="menu-item-desc">Details</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 3.00</div>-->
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/clatita-visine.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Clătită cu vișină și
+                ciocolată belgiană neagră</div>
+<!--              <div class="menu-item-desc">Chocolate drizzle top.</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 3.45</div>-->
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/clatita-banana.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Clătită cu banană și
+                ciocolată belgiană albă</div>
+<!--              <div class="menu-item-desc">Coffee kick version.</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 2.00</div>-->
+          </div>
+
+          <div class="menu-item">
+            <img src="/assets/vafe.png" alt="">
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Shake 04</div>
+<!--              <div class="menu-item-desc">Caramel + cream.</div>-->
+            </div>
+<!--            <div class="menu-item-price">$ 2.45</div>-->
+          </div>
+        </div>
+
+        <div class="menu-col coffee-col">
+          <div class="menu-col-head">
+            <h3>Cafea</h3>
+            <div class="menu-col-line"></div>
+          </div>
+
+          <div class="menu-item">
+          <!--  <img src="/assets/clatita-cafenie.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Espresso</div>
+          <!--    <div class="menu-item-desc">Details</div> -->
+            </div>
+<!--            <div class="menu-item-price">$ 3.00</div>-->
+          </div>
+
+          <div class="menu-item">
+          <!--  <img src="/assets/clatita-visine.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Doppio</div>
+        <!--      <div class="menu-item-desc">Chocolate drizzle top.</div> -->
+            </div>
+<!--            <div class="menu-item-price">$ 3.45</div>-->
+          </div>
+
+          <div class="menu-item">
+          <!--  <img src="/assets/clatita-banana.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Americano</div>
+          <!--    <div class="menu-item-desc">Coffee kick version.</div> -->
+            </div>
+<!--            <div class="menu-item-price">$ 2.00</div>-->
+          </div>
+
+          <div class="menu-item">
+          <!--  <img src="/assets/vafe.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Cortado</div>
+          <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+            </div>
+<!--            <div class="menu-item-price">$ 2.45</div>-->
+          </div>
+
+          <div class="menu-item">
+            <!--  <img src="/assets/vafe.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Cappuccino</div>
+              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+            </div>
+<!--            <div class="menu-item-price">$ 2.45</div>-->
+          </div>
+
+          <div class="menu-item">
+            <!--  <img src="/assets/vafe.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Macchiato</div>
+              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+            </div>
+<!--            <div class="menu-item-price">$ 2.45</div>-->
+          </div>
+
+          <div class="menu-item">
+            <!--  <img src="/assets/vafe.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Flat White</div>
+              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+            </div>
+        <!--    <div class="menu-item-price">$ 2.45</div> -->
+          </div>
+
+          <div class="menu-item">
+            <!--  <img src="/assets/vafe.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Latte</div>
+              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+            </div>
+        <!--    <div class="menu-item-price">$ 2.45</div> -->
+          </div>
+
+          <div class="menu-item">
+            <!--  <img src="/assets/vafe.png" alt=""> -->
+            <div class="menu-item-meta">
+              <div class="menu-item-title">Hot Mocha</div>
+              <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+            </div>
+        <!--    <div class="menu-item-price">$ 2.45</div> -->
+          </div>
+        </div>
+
+        <div>
+
+          <!-- ===== BĂUTURI CALDE ===== -->
+          <div class="menu-col">
+            <div class="menu-col-head">
+              <h3>băuturi calde</h3>
+              <div class="menu-col-line"></div>
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/clatita-cafenie.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Chai Latte</div>
+                <!--    <div class="menu-item-desc">Details</div> -->
+              </div>
+              <!--    <div class="menu-item-price">$ 3.00</div> -->
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/clatita-visine.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Ciocolată caldă</div>
+                <!--      <div class="menu-item-desc">Chocolate drizzle top.</div> -->
+              </div>
+              <!--    <div class="menu-item-price">$ 3.45</div> -->
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/clatita-banana.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Ceai de cătină</div>
+                <!--    <div class="menu-item-desc">Coffee kick version.</div> -->
+              </div>
+              <!--    <div class="menu-item-price">$ 2.00</div> -->
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/vafe.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Ceai la plic</div>
+                <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+              </div>
+              <!--    <div class="menu-item-price">$ 2.45</div> -->
+            </div>
+
+          </div> <!-- END băuturi calde -->
+
+
+          <!-- ===== BĂUTURI RECI ===== -->
+          <div class="menu-col">
+            <div class="menu-col-head">
+              <h3>băuturi reci</h3>
+              <div class="menu-col-line"></div>
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/clatita-cafenie.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Ice Latte</div>
+                <!--    <div class="menu-item-desc">Details</div> -->
+              </div>
+              <!--    <div class="menu-item-price">$ 3.00</div> -->
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/clatita-visine.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Orange coffee</div>
+                <!--      <div class="menu-item-desc">Chocolate drizzle top.</div> -->
+              </div>
+              <!--    <div class="menu-item-price">$ 3.45</div> -->
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/clatita-banana.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Limonadă</div>
+                <!--    <div class="menu-item-desc">Coffee kick version.</div> -->
+              </div>
+              <!--      <div class="menu-item-price">$ 2.00</div> -->
+            </div>
+
+            <div class="menu-item">
+              <!--  <img src="/assets/vafe.png" alt=""> -->
+              <div class="menu-item-meta">
+                <div class="menu-item-title">Ceai rece</div>
+                <!--    <div class="menu-item-desc">Caramel + cream.</div>  -->
+              </div>
+              <!--    <div class="menu-item-price">$ 2.45</div> -->
+            </div>
+
+          </div> <!-- END băuturi reci -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & SCHEDULE -->
+  <section class="schedule" id="schedule">
+    <div class="container">
+      <h2 class="section-title big">location &amp;<br>schedule</h2>
+      <div class="section-line"></div>
+
+      <div class="map-wrap">
+        <iframe
+          title="Map"
+          src="https://www.google.com/maps?q=Strada%20Nationala%2022,%20Ungheni,%20Moldova&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <div class="schedule-date">7–9 Martie</div>
+          <div class="schedule-place">Ungheni</div>
+          <div class="schedule-meta">
+            <span>Strada Naţionala 22, Ungheni</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-date">28–31 October</div>
+          <div class="schedule-place">The Bronx</div>
+          <div class="schedule-meta">
+            <span>20 Cooper Square, NY</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-date">01–05 November</div>
+          <div class="schedule-place">Manhattan</div>
+          <div class="schedule-meta">
+            <span>20 Cooper Square, NY</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-date">05–12 November</div>
+          <div class="schedule-place">Queens</div>
+          <div class="schedule-meta">
+            <span>20 Cooper Square, NY</span>
+            <span>09:00 – 18:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-photo" aria-hidden="true">
+        <img class="about-main" src="/assets/aboutphoto.jpg" alt="">
+        <img src="/assets/hom.png" class="about-signature" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="section-title big">{site.about.title}</h2>
+        <div class="section-line"></div>
+
+        <h3 class="about-headline">{site.about.headline}</h3>
+
+        <p class="section-text about-text">{site.about.text}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title big">{site.contact.title}</h2>
+        <div class="section-line"></div>
+        <p class="contact-text">{site.contact.text}</p>
+
+        <div class="contact-mini">
+          <div><strong>{site.contact.phoneLabel}</strong><span>{site.contact.phone}</span></div>
+          <div><strong>{site.contact.emailLabel}</strong><span>{site.contact.email}</span></div>
+        </div>
+      </div>
+
+      <form class="form">
+        <div class="form-row">
+          <input type="text" placeholder="Nume" required>
+          <input type="text" placeholder="Prenume" required>
+        </div>
+        <input type="email" placeholder="Adresa de Email📧" required>
+        <textarea rows="7" placeholder="Lasă-ne un mesaj 🥰"></textarea>
+        <button class="btn accent" type="submit">{site.contact.button}</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-title">{site.footer.title}</p>
+      <p class="footer-text">{site.footer.text}</p>
+      <div class="social">
+        <a href={site.social.facebook}
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">f</a>
+
+        <a href={site.social.instagram}
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm5 3.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm0 2A2.8 2.8 0 1 1 9.2 12 2.8 2.8 0 0 1 12 9.2zm4.5-2.3a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
+            </svg>
+        </a>
+
+        <a href={site.social.youtube}
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="YouTube">▶</a>
+      </div>
+      <p class="footer-copy">{site.footer.copy}</p>
+    </div>
+  </footer>
+  <div class="mascot" aria-label="HOM Cafe mascot">
+    <div class="mascot-bubble">{site.mascot.bubble}</div>
+
+    <!-- simple friendly SVG mascot (coffee cup) -->
+    <svg class="mascot-svg" viewBox="0 0 120 120" role="img" aria-label="Coffee mascot">
+      <circle cx="60" cy="60" r="52" fill="rgba(247,241,227,.85)" stroke="rgba(111,78,55,.35)" stroke-width="4"/>
+      <path d="M35 52h44v20c0 12-10 22-22 22S35 84 35 72V52z" fill="rgba(111,78,55,.85)"/>
+      <path d="M79 56h10c8 0 8 20 0 20H79" fill="none" stroke="rgba(111,78,55,.85)" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="52" cy="67" r="4" fill="rgba(247,241,227,.95)"/>
+      <circle cx="66" cy="67" r="4" fill="rgba(247,241,227,.95)"/>
+      <path d="M52 78c4 4 12 4 16 0" fill="none" stroke="rgba(247,241,227,.95)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M46 44c-6-8 4-14 0-22" fill="none" stroke="rgba(122,31,43,.75)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M60 44c-6-8 4-14 0-22" fill="none" stroke="rgba(122,31,43,.75)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M74 44c-6-8 4-14 0-22" fill="none" stroke="rgba(122,31,43,.75)" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <script is:inline src="/js/script.js"></script>
+</main>
+
+</body>
+</html>
