@@ -1,7 +1,5 @@
 backend:
-  name: github
-  repo: CosmaK-47/lab2pweb
-  branch: lab4-astro-cms
+  name: git-gateway
 
 media_folder: "public/assets"
 public_folder: "/assets"
