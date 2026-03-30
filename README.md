@@ -25,4 +25,4 @@ Create a web page for your/friends/relatives business (example: car-rent, cookie
 
 
 ## Live Demo
-https://issachain.netlify.app
+https://homcaffe.netlify.app/#home
