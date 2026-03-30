@@ -1,0 +1,20 @@
+HTTP/1.1 301 Moved Permanently
+location: http://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-1H1DjnD7sGoouB5-HMNEuA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+reporting-endpoints: default="//www.google.com/httpservice/retry/jserror?ei=ZyvKaezJGJrt5OUP3bHkuAE&cad=crash&error=Page%20Crash&jsel=1&bver=2410&dpf=Y3Kw1SL0kWvGBj5jl_mACBIhfG_YF4-8mLHKVDLuzbY"
+date: Mon, 30 Mar 2026 07:51:03 GMT
+expires: Wed, 29 Apr 2026 07:51:03 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 219
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+connection: close
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
