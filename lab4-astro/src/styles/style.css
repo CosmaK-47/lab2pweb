@@ -171,19 +171,24 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     width: 100%;
     padding: 0 12px;
+    overflow-x: auto;
   }
 
   .nav-link{
+    margin-top: 0;
     color: var(--coffee-dark);
-    font-weight: 700;
-    font-size: 14px;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: rgba(247,241,227,.55);
-    border: 1px solid rgba(111,78,55,.18);
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 16px;
+    white-space: nowrap;
+
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    border: none;
   }
 
   .nav-link:hover{
@@ -508,7 +513,7 @@ body{
   position: absolute;
   inset: 0;
 
-  background: url('D:/lab1pweb/lab2pweb/lab4-astro/public/assets/logocafeniu.png') no-repeat;
+  background: url('/assets/logocafeniu.png') no-repeat;
   background-size: 600px;
   background-position: 30% 50%;
 
@@ -607,7 +612,7 @@ body{
   position: absolute;
   inset: 0;
 
-  background: url('D:/lab1pweb/lab2pweb/lab4-astro/public/assets/logocafeniu.png') no-repeat;
+  background: url('/assets/logocafeniu.png') no-repeat;
   background-size: 600px;
   background-position: 30% 50%;
 
@@ -1081,29 +1086,266 @@ body{
 }
 
 /* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 980px){
-  .header-inner{ justify-content: space-between; }
-  .hero-grid{ grid-template-columns: 1fr; }
-  .specials-grid{ grid-template-columns: repeat(2, 1fr); }
-  .specials-right{ grid-column: 1 / -1; padding-left: 0; }
-  .menu-grid{ grid-template-columns: 1fr; }
-  .schedule-grid{ grid-template-columns: repeat(2, 1fr); }
-  .about-grid{ grid-template-columns: 1fr; }
-  .contact-grid{ grid-template-columns: 1fr; }
-  .hero{ padding: 54px 0 28px; }
-  .hero-right{ justify-content:center; }
-  .hero-truck{ height: 240px; max-width: 560px; }
-  .hero-kicker{ display:none; } /* prea mare pe mobil */
-  .hero-title{ font-size: clamp(42px, 10vw, 70px); }
+
+  .container{
+    width: calc(100% - 28px);
+  }
+
+  .header-inner{
+    min-height: auto;
+    padding: 18px 0 14px;
+    gap: 14px;
+  }
+
+  .brand-logo{
+    width: 115px;
+    margin-top: 0;
+  }
+
+  .nav{
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .nav-link{
+    margin-top: 0;
+    font-size: 13px;
+    padding: 7px 12px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    white-space: nowrap;
+  }
+
+  .hero{
+    padding: 34px 0 30px;
+    overflow: hidden;
+  }
+
+  .hero-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-left{
+    margin-top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .hero-kicker{
+    font-size: clamp(52px, 10vw, 78px);
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .hero-title{
+    font-size: clamp(44px, 9vw, 62px);
+    letter-spacing: -2px;
+  }
+
+  .hero-title::after{
+    width: 80px;
+    margin-top: 24px;
+    transform: none !important;
+  }
+
+  .hero-subtitle{
+    font-size: clamp(22px,4.5vw, 30px);
+    line-height: 1.08;
+    margin-top: 28px;
+    max-width: 100%;
+    transform: none !important;
+  }
+
+  .hero-text{
+    font-size: 14px;
+    line-height: 1.45;
+    max-width: 100%;
+    transform: none !important;
+  }
+
+  .hero-right{
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .hero-truck{
+    width: 560px !important;
+    max-width: none !important;
+    height: auto !important;
+    transform: translateX(40px) translateY(10px) !important;
+  }
+
+  .specials-grid,
+  .menu-grid,
+  .schedule-grid,
+  .about-grid,
+  .contact-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .specials,
+  .menu,
+  .schedule,
+  .about,
+  .contact{
+    padding: 54px 0;
+  }
+
+  .special-card{
+    min-height: auto;
+  }
+
+  .special-card img{
+    height: 160px;
+  }
+
+  .form-row{
+    grid-template-columns: 1fr;
+  }
+
+  .floating-contact{
+    top: auto;
+    right: 14px;
+    bottom: 18px;
+    transform: none;
+    font-size: 13px;
+    padding: 11px 14px;
+  }
 }
 
-@media (max-width: 560px){
-  .schedule-grid{ grid-template-columns: 1fr; }
-  .form-row{ grid-template-columns: 1fr; }
-  .specials-grid{ grid-template-columns: 1fr; }
-  .special-card{ min-height: auto; }
-  .special-card img{ height: 160px; }
+
+/* ================= RESPONSIVE FIX ================= */
+@media (max-width: 450px){
+
+  .container{
+    width: calc(100% - 28px);
+  }
+
+  .header-inner{
+    min-height: auto;
+    padding: 18px 0 14px;
+    gap: 14px;
+  }
+
+  .brand-logo{
+    width: 115px;
+    margin-top: 0;
+  }
+
+  .nav{
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+
+  .nav-link{
+    margin-top: 0;
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+
+  .hero{
+    padding: 34px 0 0;
+    overflow: hidden;
+  }
+
+  .hero-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-left{
+    margin-top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .hero-kicker{
+    display: block !important;
+    font-size: clamp(58px, 18vw, 82px);
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    opacity: .10;
+    transform: none !important;
+    white-space: nowrap;
+  }
+
+  .hero-title{
+    font-size: clamp(54px, 18vw, 76px);
+    letter-spacing: -3px;
+    transform: none !important;
+    margin-top: 0;
+  }
+
+  .hero-title::after{
+    width: 80px;
+    margin-top: 24px;
+    transform: none !important;
+  }
+
+  .hero-subtitle{
+    font-size: clamp(24px, 7vw, 34px);
+    line-height: 1.08;
+    margin-top: 28px;
+    max-width: 100%;
+    transform: none !important;
+  }
+
+  .hero-text{
+    font-size: 14px;
+    line-height: 1.45;
+    max-width: 100%;
+    transform: none !important;
+  }
+
+  .hero-right{
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .hero-truck{
+    width: 450px !important;
+    max-width: none !important;
+    height: auto !important;
+    transform: translateX(10px) translateY(10px) !important;
+  }
+
+  .specials-grid,
+  .menu-grid,
+  .schedule-grid,
+  .about-grid,
+  .contact-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .specials,
+  .menu,
+  .schedule,
+  .about,
+  .contact{
+    padding: 54px 0;
+  }
+
+  .floating-contact{
+    top: auto;
+    right: 14px;
+    bottom: 18px;
+    transform: none;
+    font-size: 13px;
+    padding: 11px 14px;
+  }
 }
+
 
 /* Mascot (Clippy-like) */
 .mascot{
@@ -1201,3 +1443,48 @@ body{
   background: #ff0000;
   color: #fff;
 }
+
+html,
+body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 450px){
+
+  .site-header,
+  .hero,
+  .specials,
+  .menu,
+  .schedule,
+  .about,
+  .contact,
+  .footer{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero-truck{
+    width: 118vw !important;
+    max-width: 118vw !important;
+    transform: translateX(4vw) translateY(10px) !important;
+  }
+
+  .hero-title,
+  .hero-subtitle,
+  .hero-text,
+  .hero-kicker{
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .nav{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+
+
