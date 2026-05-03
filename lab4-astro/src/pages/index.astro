@@ -10,7 +10,9 @@ import site from "../content/site.json";
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HOM Cafe • Landing</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 <body>
 
@@ -26,9 +28,12 @@ import site from "../content/site.json";
 
     <!-- NAVIGATION -->
     <nav class="nav">
-      <a class="nav-link" href="#menu">{site.nav.menu}</a>
-      <a class="nav-link" href="#schedule">{site.nav.schedule}</a>
-      <a class="nav-link" href="#about">{site.nav.about}</a>
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#menu">Menu</a>
+      <a class="nav-link" href="#schedule">Location</a>
+      <a class="nav-link" href="#catering">Catering</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -91,7 +96,9 @@ import site from "../content/site.json";
 
       <div class="menu-grid">
         {site.menuSections.map((section) => (
-            <div class={`menu-col ${section.title.toLowerCase() === "cafea" ? "coffee-col" : ""}`}>
+            <div class={`menu-col ${section.title.toLowerCase() === "cafea" ? "coffee-col" :
+                section.title.toLowerCase().includes("calde") ? "hot-col" :
+                section.title.toLowerCase().includes("reci") ? "cold-col" :""}`}>
               <div class="menu-col-head">
                 <h3>{section.title}</h3>
                 <div class="menu-col-line"></div>
