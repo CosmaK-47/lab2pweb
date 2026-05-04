@@ -68,6 +68,14 @@
           "name": "Vafe",
           "image": "/assets/vafe.png",
           "alt": "Vafe"
+        },
+        {
+          "name": "Clătite cu căpșuni si ciocolată belgiană",
+          "alt": "Clătite cu căpșuni si ciocolată belgiană"
+        },
+        {
+          "name": "Adaos de înghețată",
+          "alt": "Adaos de înghețată"
         }
       ]
     },
@@ -145,8 +153,8 @@
   },
   "about": {
     "title": "Despre noi",
-    "headline": "Energie de street food. Gust premium. Zero așteptare.",
-    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, pop-up-uri și pofte zilnice. Ne chemi și aducem vibe-ul.",
+    "headline": "Energie de street food. Gust premium. Experiență unică.",
+    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, festivaluri și pofte zilnice. Ne chemi și aducem vibe-ul.\nHOM Caffè este o afacere de familie, născută din dorința de a ne întoarce acasă și de a construi ceva al nostru. Suntem tineri, motivați și punem suflet în fiecare produs, pentru a oferi experiențe simple, dar memorabile. Numele ‘HOM’ vine din ideea de „home” — întoarcerea acasă, locul unde începe totul.",
     "image": "/assets/aboutphoto.jpg",
     "imageAlt": "Băutură HOM Cafe în fața rulotei"
   },
@@ -154,39 +162,39 @@
     "title": "Evenimente",
     "events": [
       {
-        "date": "7–9 Martie",
+        "date": "9 Mai",
         "city": "Ungheni",
-        "location": "Strada Naționala 22, Ungheni",
-        "hours": "09:00 – 18:00"
+        "location": "Piața Independenței ",
+        "hours": "09:00 "
       },
       {
-        "date": "28–31 October",
-        "city": "The Bronx",
-        "location": "20 Cooper Square, NY",
-        "hours": "09:00 – 18:00"
+        "date": "29-1 Iunie",
+        "city": "Chișinău",
+        "location": "Moldexpo, KidsExpo",
+        "hours": "10:00 – 18:00"
       },
       {
-        "date": "01–05 November",
-        "city": "Manhattan",
-        "location": "20 Cooper Square, NY",
-        "hours": "09:00 – 18:00"
+        "date": "-",
+        "city": "-",
+        "location": "-",
+        "hours": "-"
       },
       {
-        "date": "05–12 November",
-        "city": "Queens",
-        "location": "20 Cooper Square, NY",
-        "hours": "09:00 – 18:00"
+        "date": "-",
+        "city": "-",
+        "location": "-",
+        "hours": "-"
       }
     ]
   },
   "cateringLink": "https://cosmak-47.github.io/hom-caffee-lab6/",
   "specials": {
-    "title": "daily specials",
-    "text": "Selecții zilnice pentru iubitorii de dulce, te așteptăm pentru o experiență delicioasă. În secțiunea Location poți găsi viitoarele noastre prezențe. ",
+    "title": "Daily specials",
+    "text": "Selecții zilnice pentru iubitorii de dulce, te așteptăm pentru o experiență delicioasă. În secțiunea Location poți găsi viitoarele noastre locații. ",
     "items": [
       {
         "name": "Clătită cu banană și ciocolată ",
-        "image": "/assets/vafa-oreo.png",
+        "image": "/assets/photo_2026-05-04_17-58-30.jpg",
         "alt": "Clătită cu banană și ciocolată "
       },
       {
