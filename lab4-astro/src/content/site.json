@@ -1,7 +1,4 @@
 {
-
-  "cateringLink": "https://cosmak-47.github.io/hom-caffee-lab6/",
-
   "contact": {
     "title": "Contact",
     "text": "Doriți o rezervare sau un meniu personalizat? Trimiteți-ne un mesaj și revenim în cel mai scurt timp.",
@@ -182,19 +179,20 @@
       }
     ]
   },
+  "cateringLink": "https://cosmak-47.github.io/hom-caffee-lab6/",
   "specials": {
     "title": "daily specials",
-    "text": "Selecții zilnice în ediție limitată. Alege experiența ta — clasică, cremoasă sau intens răcoritoare.",
+    "text": "Selecții zilnice pentru iubitorii de dulce, te așteptăm pentru o experiență delicioasă. În secțiunea Location poți găsi viitoarele noastre prezențe. ",
     "items": [
       {
-        "name": "Vafa cu Oreo",
+        "name": "Clătită cu banană și ciocolată ",
         "image": "/assets/vafa-oreo.png",
-        "alt": "Vafa cu Oreo"
+        "alt": "Clătită cu banană și ciocolată "
       },
       {
-        "name": "Vafa cu fistic",
+        "name": "Clătită cu căpșuni și ciocolată ",
         "image": "/assets/vafa-fistic.png",
-        "alt": "Vafa cu fistic"
+        "alt": "Clătită cu căpșuni și ciocolată"
       },
       {
         "name": "Clatita cu banană",
@@ -210,9 +208,9 @@
   },
   "hero": {
     "kicker": "food truck",
-    "title": "welcome",
-    "subtitle": "Gustări proaspete. Arome intense. Servire rapidă.",
-    "text": "Te așteptăm cu gustări artizanale și specialități dulci — perfecte pentru evenimente, pauze la birou sau momentele când pofta apare târziu."
+    "title": "welcome HOM",
+    "subtitle": "Gustări proaspete. Băuturi de specialitate. Servire rapidă.",
+    "text": "Te așteptăm cu gustări artizanale și specialități dulci — în cadrul evenimentelor publice sau private la solicitare. Poți brona Food Truck-ul pentru cumetrii, nunți și zile de naștere accesând butonul Catering!"
   },
   "footer": {
     "title": "IT’S TRUCKING GOOD!",
