@@ -206,6 +206,11 @@
         "name": "Clătită cu vișină și ciocolată neagră",
         "image": "/assets/cv.png",
         "alt": "Clătită cu vișină și ciocolată neagră"
+      },
+      {
+        "name": "Vafe pe băț",
+        "image": "/assets/vafe1.png",
+        "alt": "Vafe pe băț"
       }
     ]
   },
