@@ -174,7 +174,6 @@ body{
     gap: 14px;
     width: 100%;
     padding: 0 12px;
-    overflow-x: auto;
   }
 
   .nav-link{
@@ -300,19 +299,19 @@ body{
   margin-top: 0px;
 }
 
-/*.hero::before{*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  inset: 0;*/
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
 
-/*  background: url('D:/lab1pweb/lab2pweb/lab4-astro/public/assets/logocafeniu.png') no-repeat center;*/
-/*  background-size: 700px;*/
+  background: url('D:/lab1pweb/lab2pweb/lab4-astro/public/assets/logocafeniu.png') no-repeat center;
+  background-size: 400px;
 
-/*  opacity: 0.4; !* 🔥 watermark *!*/
-/*  pointer-events: none;*/
+  opacity: 0.4; /* 🔥 watermark */
+  pointer-events: none;
 
-/*  transform: translateX(-650px)  translateY(210px)!important;*/
-/*}*/
+  transform: translateX(500px)  translateY(1005px)!important;
+}
 
 .hero-grid{
   display: grid;
@@ -513,7 +512,7 @@ body{
   position: absolute;
   inset: 0;
 
-  background: url('/assets/logocafeniu.png') no-repeat;
+  background: url('D:/lab1pweb/lab2pweb/lab4-astro/public/assets/logocafeniu.png') no-repeat;
   background-size: 600px;
   background-position: 30% 50%;
 
@@ -536,8 +535,14 @@ body{
   min-height: 360px;
   display:flex;
   flex-direction:column;
-  justify-content:flex-end;
+  justify-content: space-between; /* <- IMPORTANT */
+
+  align-items: center;            /* <- IMPORTANT */
+
+  text-align: center;             /* <- IMPORTANT */
   background: rgba(255,255,255,.03);
+
+
 }
 
 .special-card img{
@@ -559,6 +564,10 @@ body{
   text-transform: none;
   line-height: 1.1;
   text-shadow: 0 1px 2px rgba(0,0,0,0.06);
+
+  min-height: 72px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .specials-right{
@@ -770,48 +779,7 @@ body{
 }
 
 /* ===== Hover line for ALL menu items ===== */
-.menu .menu-item{
-  position: relative;
-}
 
-.menu .menu-item::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  width: 0%;
-  height: 2px;
-  background: var(--bordo);
-  transition: 300ms ease;
-  opacity: .9;
-}
-
-.menu .menu-item:hover::after{
-  width: 40%;
-}
-
-/* dacă item-ul are imagine, mutăm linia după imagine */
-.menu .menu-item:has(img)::after{
-  left: 80px; /* 64px + gap */
-}
-
-/* mobile: linia un pic mai lungă */
-@media (max-width: 560px){
-  .menu .menu-item:hover::after{
-    width: 60%;
-  }
-}
-
-/* Desktop hover (mouse) */
-.menu .menu-item:hover::after{
-  width: 40%;
-}
-
-/* Mobile/keyboard: tap & focus */
-.menu .menu-item:active::after,
-.menu .menu-item:focus-within::after{
-  width: 60%;
-}
 
 /* SCHEDULE */
 .schedule{
@@ -1191,6 +1159,14 @@ body{
     grid-template-columns: 1fr !important;
   }
 
+  .menu-grid{
+    grid-auto-flow: row !important;
+  }
+
+  .coffee-col{
+    grid-row: auto !important;
+  }
+
   .specials,
   .menu,
   .schedule,
@@ -1328,6 +1304,21 @@ body{
     grid-template-columns: 1fr !important;
   }
 
+  .menu-grid{
+    grid-auto-flow: row !important;
+  }
+
+  .menu::before{
+    background-size: 320px;
+    background-position: center;
+    opacity: 0.15;
+    transform: translateX(200px) translateY(1500px) !important;
+  }
+
+  .coffee-col{
+    grid-row: auto !important;
+  }
+
   .specials,
   .menu,
   .schedule,
@@ -1456,7 +1447,9 @@ body{
   .site-header,
   .hero,
   .specials,
-  .menu,
+  .menu{
+    overflow: visible !important;
+  }
   .schedule,
   .about,
   .contact,
