@@ -198,11 +198,6 @@
         "alt": "Clătită cu banană și ciocolată cu lapte"
       },
       {
-        "name": "Clătită cu căpșuni și ciocolată ",
-        "image": "/assets/vafa-fistic.png",
-        "alt": "Clătită cu căpșuni și ciocolată"
-      },
-      {
         "name": "Clătita cu banană și ciocolată albă",
         "image": "/assets/cbca.png",
         "alt": "Clătita cu banană și ciocolată albă"
@@ -211,16 +206,6 @@
         "name": "Clătită cu vișină și ciocolată neagră",
         "image": "/assets/cv.png",
         "alt": "Clătită cu vișină și ciocolată neagră"
-      },
-      {
-        "name": "Clătită cu brânză și verdeață",
-        "alt": "Clătită cu brânză și verdeață",
-        "image": "/assets/cbv.png"
-      },
-      {
-        "name": "Clătită cu șuncă și cașcaval",
-        "alt": "Clătită cu șuncă și cașcaval",
-        "image": "/assets/csc.png"
       }
     ]
   },
