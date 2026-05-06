@@ -193,9 +193,9 @@
     "text": "Selecții zilnice pentru iubitorii de dulce, te așteptăm pentru o experiență delicioasă. În secțiunea Location poți găsi viitoarele noastre locații. ",
     "items": [
       {
-        "name": "Clătită cu banană și ciocolată ",
-        "image": "/assets/photo_2026-05-04_17-58-30.jpg",
-        "alt": "Clătită cu banană și ciocolată "
+        "name": "Clătită cu banană și ciocolată cu lapte",
+        "image": "/assets/cbcl.png",
+        "alt": "Clătită cu banană și ciocolată cu lapte"
       },
       {
         "name": "Clătită cu căpșuni și ciocolată ",
@@ -203,14 +203,24 @@
         "alt": "Clătită cu căpșuni și ciocolată"
       },
       {
-        "name": "Clatita cu banană",
-        "image": "/assets/clatita-banana.png",
-        "alt": "Clatită cu banană"
+        "name": "Clătita cu banană și ciocolată albă",
+        "image": "/assets/cbca.png",
+        "alt": "Clătita cu banană și ciocolată albă"
       },
       {
-        "name": "Clatita cu cafea",
-        "image": "/assets/clatita-cafenie.png",
-        "alt": "Clatită cu cafea"
+        "name": "Clătită cu vișină și ciocolată neagră",
+        "image": "/assets/cv.png",
+        "alt": "Clătită cu vișină și ciocolată neagră"
+      },
+      {
+        "name": "Clătită cu brânză și verdeață",
+        "alt": "Clătită cu brânză și verdeață",
+        "image": "/assets/cbv.png"
+      },
+      {
+        "name": "Clătită cu șuncă și cașcaval",
+        "alt": "Clătită cu șuncă și cașcaval",
+        "image": "/assets/csc.png"
       }
     ]
   },
