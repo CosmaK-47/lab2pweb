@@ -1,7 +1,4 @@
 {
-
-  "cateringLink": "https://cosmak-47.github.io/hom-caffee-lab6/",
-
   "contact": {
     "title": "Contact",
     "text": "Doriți o rezervare sau un meniu personalizat? Trimiteți-ne un mesaj și revenim în cel mai scurt timp.",
@@ -29,13 +26,13 @@
       "items": [
         {
           "name": "Clătită cu șuncă și cașcaval",
-          "image": "/assets/clatita-sunca-cascaval.png",
+          "image": "/assets/csc.png",
           "alt": "Clătită cu șuncă și cașcaval"
         },
         {
-          "name": "Clătită cu Brânză",
-          "image": "/assets/clatita-branza.png",
-          "alt": "Clătită cu brânză"
+          "name": "Clătită cu brânză și verdeață",
+          "image": "/assets/cbv.png",
+          "alt": "Clătită cu brânză și verdeață"
         },
         {
           "name": "Hot-Dog",
@@ -54,23 +51,32 @@
       "items": [
         {
           "name": "Clătită cu banană și ciocolată belgiană cu lapte",
-          "image": "/assets/clatita-cafenie.png",
-          "alt": "Clătită dulce cu banană și ciocolată cu lapte"
+          "image": "/assets/cbcl.png",
+          "alt": "Clătită cu banană și ciocolată belgiană cu lapte"
         },
         {
           "name": "Clătită cu vișină și ciocolată belgiană neagră",
-          "image": "/assets/clatita-visine.png",
-          "alt": "Clătită dulce cu vișină și ciocolată neagră"
+          "image": "/assets/cv.png",
+          "alt": "Clătită cu vișină și ciocolată belgiană neagră"
         },
         {
           "name": "Clătită cu banană și ciocolată belgiană albă",
-          "image": "/assets/clatita-banana.png",
-          "alt": "Clătită dulce cu banană și ciocolată albă"
+          "image": "/assets/cbca.png",
+          "alt": "Clătită cu banană și ciocolată belgiană albă"
+        },
+        {
+          "name": "Clătită cu căpșuni și ciocolată",
+          "alt": "Clătită cu căpșuni și ciocolată",
+          "image": "/assets/ccc.png"
         },
         {
           "name": "Vafe",
           "image": "/assets/vafe.png",
           "alt": "Vafe"
+        },
+        {
+          "name": "Adaos de înghețată",
+          "alt": "Adaos de înghețată"
         }
       ]
     },
@@ -148,8 +154,8 @@
   },
   "about": {
     "title": "Despre noi",
-    "headline": "Energie de street food. Gust premium. Zero așteptare.",
-    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, pop-up-uri și pofte zilnice. Ne chemi și aducem vibe-ul.",
+    "headline": "Energie de street food. Gust premium. Experiență unică.",
+    "text": "Servim rapid, fresh și personalizabil — pentru evenimente, festivaluri și pofte zilnice. Ne chemi și aducem vibe-ul.\nHOM Caffè este o afacere de familie, născută din dorința de a ne întoarce acasă și de a construi ceva al nostru. Suntem tineri, motivați și punem suflet în fiecare produs, pentru a oferi experiențe simple, dar memorabile. Numele ‘HOM’ vine din ideea de „home” — întoarcerea acasă, locul unde începe totul.",
     "image": "/assets/aboutphoto.jpg",
     "imageAlt": "Băutură HOM Cafe în fața rulotei"
   },
@@ -157,62 +163,63 @@
     "title": "Evenimente",
     "events": [
       {
-        "date": "7–9 Martie",
+        "date": "9 Mai",
         "city": "Ungheni",
-        "location": "Strada Naționala 22, Ungheni",
-        "hours": "09:00 – 18:00"
+        "location": "Piața Independenței ",
+        "hours": "09:00 "
       },
       {
-        "date": "28–31 October",
-        "city": "The Bronx",
-        "location": "20 Cooper Square, NY",
-        "hours": "09:00 – 18:00"
+        "date": "29-1 Iunie",
+        "city": "Chișinău",
+        "location": "Moldexpo, KidsExpo",
+        "hours": "10:00 – 18:00"
       },
       {
-        "date": "01–05 November",
-        "city": "Manhattan",
-        "location": "20 Cooper Square, NY",
-        "hours": "09:00 – 18:00"
+        "date": "-",
+        "city": "-",
+        "location": "-",
+        "hours": "-"
       },
       {
-        "date": "05–12 November",
-        "city": "Queens",
-        "location": "20 Cooper Square, NY",
-        "hours": "09:00 – 18:00"
+        "date": "-",
+        "city": "-",
+        "location": "-",
+        "hours": "-"
       }
     ]
   },
+  "cateringLink": "https://cosmak-47.github.io/hom-caffee-lab6/",
   "specials": {
-    "title": "daily specials",
-    "text": "Selecții zilnice în ediție limitată. Alege experiența ta — clasică, cremoasă sau intens răcoritoare.",
+    "title": "Daily specials",
+    "text": "Selecții zilnice pentru iubitorii de dulce, te așteptăm pentru o experiență delicioasă. În secțiunea Location poți găsi viitoarele noastre locații. ",
     "items": [
       {
-        "name": "Vafa cu Oreo",
-        "image": "/assets/vafa-oreo.png",
-        "alt": "Vafa cu Oreo"
+        "name": "Clătită cu banană și ciocolată cu lapte",
+        "image": "/assets/cbcl.png",
+        "alt": "Clătită cu banană și ciocolată cu lapte"
       },
       {
-        "name": "Vafa cu fistic",
-        "image": "/assets/vafa-fistic.png",
-        "alt": "Vafa cu fistic"
+        "name": "Clătita cu banană și ciocolată albă",
+        "image": "/assets/cbca.png",
+        "alt": "Clătita cu banană și ciocolată albă"
       },
       {
-        "name": "Clatita cu banană",
-        "image": "/assets/clatita-banana.png",
-        "alt": "Clatită cu banană"
+        "name": "Clătită cu vișină și ciocolată neagră",
+        "image": "/assets/cv.png",
+        "alt": "Clătită cu vișină și ciocolată neagră"
       },
       {
-        "name": "Clatita cu cafea",
-        "image": "/assets/clatita-cafenie.png",
-        "alt": "Clatită cu cafea"
+        "name": "Vafe pe băț",
+        "image": "/assets/vafe1.png",
+        "alt": "Vafe pe băț"
       }
     ]
   },
   "hero": {
     "kicker": "food truck",
-    "title": "welcome",
-    "subtitle": "Gustări proaspete. Arome intense. Servire rapidă.",
-    "text": "Te așteptăm cu gustări artizanale și specialități dulci — perfecte pentru evenimente, pauze la birou sau momentele când pofta apare târziu."
+    "title": "welcome ",
+    "subtitle": "Gustări proaspete. Băuturi de specialitate. Servire rapidă.",
+    "text": "Te așteptăm cu gustări artizanale și specialități dulci — în cadrul evenimentelor publice sau private la solicitare. Poți brona Food Truck-ul pentru cumetrii, nunți și zile de naștere accesând butonul Catering!"
   },
   "footer": {
     "title": "IT’S TRUCKING GOOD!",
