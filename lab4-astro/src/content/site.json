@@ -65,13 +65,14 @@
           "alt": "Clătită cu banană și ciocolată belgiană albă"
         },
         {
+          "name": "Clătită cu căpșuni și ciocolată",
+          "alt": "Clătită cu căpșuni și ciocolată",
+          "image": "/assets/ccc.png"
+        },
+        {
           "name": "Vafe",
           "image": "/assets/vafe.png",
           "alt": "Vafe"
-        },
-        {
-          "name": "Clătite cu căpșuni si ciocolată belgiană",
-          "alt": "Clătite cu căpșuni si ciocolată belgiană"
         },
         {
           "name": "Adaos de înghețată",
