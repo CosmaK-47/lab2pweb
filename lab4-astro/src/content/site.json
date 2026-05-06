@@ -26,13 +26,13 @@
       "items": [
         {
           "name": "Clătită cu șuncă și cașcaval",
-          "image": "/assets/clatita-sunca-cascaval.png",
+          "image": "/assets/csc.png",
           "alt": "Clătită cu șuncă și cașcaval"
         },
         {
-          "name": "Clătită cu Brânză",
-          "image": "/assets/clatita-branza.png",
-          "alt": "Clătită cu brânză"
+          "name": "Clătită cu brânză și verdeață",
+          "image": "/assets/cbv.png",
+          "alt": "Clătită cu brânză și verdeață"
         },
         {
           "name": "Hot-Dog",
@@ -51,18 +51,18 @@
       "items": [
         {
           "name": "Clătită cu banană și ciocolată belgiană cu lapte",
-          "image": "/assets/clatita-cafenie.png",
-          "alt": "Clătită dulce cu banană și ciocolată cu lapte"
+          "image": "/assets/cbcl.png",
+          "alt": "Clătită cu banană și ciocolată belgiană cu lapte"
         },
         {
           "name": "Clătită cu vișină și ciocolată belgiană neagră",
-          "image": "/assets/clatita-visine.png",
-          "alt": "Clătită dulce cu vișină și ciocolată neagră"
+          "image": "/assets/cv.png",
+          "alt": "Clătită cu vișină și ciocolată belgiană neagră"
         },
         {
           "name": "Clătită cu banană și ciocolată belgiană albă",
-          "image": "/assets/clatita-banana.png",
-          "alt": "Clătită dulce cu banană și ciocolată albă"
+          "image": "/assets/cbca.png",
+          "alt": "Clătită cu banană și ciocolată belgiană albă"
         },
         {
           "name": "Vafe",
